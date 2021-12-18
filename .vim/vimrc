@@ -1,5 +1,7 @@
 scriptencoding utf-8
 
+syntax on
+
 filetype plugin on
 
 let mapleader = ","
@@ -22,7 +24,7 @@ map Q gq
 cmap w!! w !sudo tee > /dev/null %
 
 set autochdir           " Might cause plugin problems
-set autoindent          " Auto indenting
+set autoindent
 set autoread            " Read the file when it's changed from the outside
 set backspace=2         " Allow backspacing over everything
 set backup
@@ -45,12 +47,15 @@ set showmatch           " Show matching brackets
 set smartcase
 set suffixes+=.info,.aux,.log,.dvi,.bbl,.out,.o,.lo,.pdf
 set tabstop=4
-set viminfo='20,<500,%,n~/.vim/viminfo   " Keep a .viminfo file.
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplUseSingleClick = 1
+set viminfo='20,<500,%,n~/.vim/viminfo
+set wildmenu            " Better tab completion
 
 " Autosave when the buffer loses focus
 autocmd BufLeave,FocusLost * silent! wa
+
+"autocmd BufReadPost *
+"  \ if line("'\"") >= 1 && line("'\"") <= line("$") |
+"  \   exe "normal! g`\"" |
+"  \ endif
 
 " vim: set fenc=utf-8 tw=80 sw=2 sts=2 et :
