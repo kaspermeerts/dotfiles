@@ -1,5 +1,3 @@
 This git repository houses my most important configuration files and scripts.
-It's literally my home directory, I made it into a git repository.
-I added a `*` to the `~/.git/info/exclude` file and use `git add -f` to add new files to it.
 
-Most of this stuff was actually written by me. No copyright will be asserted.
+Inspired by [this Hacker News post](https://news.ycombinator.com/item?id=11070797), I have a bare git repository in `~/.config/dotfiles`, with my home directory as the working tree. I have added `*` to the `.git/info/exclude` file, and `git add -f` can be start tracking new files.
