@@ -4,7 +4,6 @@ alias gdb="gdb -q"
 alias bc="bc -lq"
 alias gcc="gcc -Wall -Wextra"
 alias hd="hexdump -C"
-alias yolo="yaourt -Syua"
 alias ffmpeg="ffmpeg -hide_banner"
 
 set -e fish_greeting
