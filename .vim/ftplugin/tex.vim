@@ -1,1 +1,1 @@
-set formatoptions=tcroqwa
+set formatoptions=tcroqw
