@@ -26,10 +26,10 @@ function humanize_duration
 	end
 end
 
-#function fish_right_prompt
-#	if not test $CMD_DURATION -a $CMD_DURATION -ge 500
-#		return
-#	end
-#
-#	set_color green; humanize_duration $CMD_DURATION; set_color normal;
-#end
+function fish_right_prompt
+	if not test $CMD_DURATION -a $CMD_DURATION -ge 500
+		return
+	end
+
+	set_color green; humanize_duration $CMD_DURATION; set_color normal;
+end
